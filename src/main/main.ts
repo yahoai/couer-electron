@@ -33,7 +33,7 @@ ipcMain.on('ipc-example', async (event, arg) => {
 });
 
 ipcMain.on('search-image', async (event, arg) => {
-  await startSearch(arg);
+  await startSearch(arg, event);
 });
 
 if (process.env.NODE_ENV === 'production') {
